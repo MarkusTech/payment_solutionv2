@@ -5,6 +5,7 @@ import morgan from "morgan";
 import helmet from "helmet";
 import dotenv from "dotenv";
 import connectDB from "./database/connectDB";
+import paymentRoute from "./routes/payment.routes";
 
 dotenv.config();
 
@@ -22,6 +23,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", (req: Request, res: Response): void => {
   res.send("WMR Server is Running");
 });
+
+app.use("/api/v1/payment", paymentRoute);
 
 app.post("/data", (req: Request, res: Response): void => {
   const data = req.body.d;
