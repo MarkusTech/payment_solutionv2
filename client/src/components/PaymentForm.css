@@ -1,0 +1,104 @@
+.payment-form-container {
+  background-color: #f8f8f8;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background: linear-gradient(
+    to right,
+    #00b4d8,
+    #0077b6
+  ); /* Gradient background */
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.payment-form h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.card-elements {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.card-number-container,
+.expiration-container,
+.cvc-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card-number-container label,
+.expiration-container label,
+.cvc-container label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.card-element {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.expiration-cvc-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.expiration-container,
+.cvc-container {
+  width: 48%; /* Making the Expiry and CVC fields take up half of the space */
+}
+
+.submit-button {
+  background-color: #0077b6;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.submit-button:disabled {
+  background-color: #7fa7c9;
+}
+
+.submit-button:hover {
+  background-color: #0099cc;
+}
