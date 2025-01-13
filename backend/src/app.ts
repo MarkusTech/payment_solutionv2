@@ -4,10 +4,14 @@ import bodyParser from "body-parser";
 import morgan from "morgan";
 import helmet from "helmet";
 import dotenv from "dotenv";
+import connectDB from "./database/connectDB";
 
 dotenv.config();
 
 const app: Application = express();
+
+// database connection
+connectDB();
 
 app.use(express.json());
 app.use(cors());
